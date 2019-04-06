@@ -58,7 +58,7 @@
          body,
          header,
          .carousel {
-         height: 40vh;
+         height: 30vh;
          }
          @media (max-width: 740px) {
          html,
