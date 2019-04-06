@@ -1,0 +1,101 @@
+span {
+color: white;
+font-weight: bolder;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.slider {
+    position: relative;
+    display: flex;
+    max-width: auto;
+}
+
+.item {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    flex-basis: 35%;;
+    transition: flex-basis 0.5s ease-in-out;
+}
+
+.item:hover {
+    flex-basis: 100%;
+}
+
+.item-1 {
+    background: url(/assets/img/3xneeqastbo.jpg) no-repeat center;
+    background-size: cover;
+}
+.item-2 {
+    background: url(/assets/img/2j5Yfrud-nw.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: url(/assets/img/Nx3_foF5jE8.jpg) no-repeat center;
+    background-size: cover;
+}
+.item-3 div span:first-child {
+    padding-left: 15px;
+}
+
+.item-4 {
+    background: url(/assets/img/l-qMCzlc7uI.jpg) no-repeat center;
+    background-size: cover;
+}
+.item-5 {
+    background: url(/assets/img/CImfZ4sXsy4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+@media screen and (max-width:760px) {
+.span {
+  font-size: bolder;
+}
+.slider {
+flex-flow: column;
+height: 640px;
+}
+
+.item {
+width: 100%;
+flex-basis: 35%;
+height: 140px;
+}
+
+.item:hover {
+flex-basis: 200%;
+}
+
+.item-1 {
+background: url(/assets/img/Yura-kotov-max500px.jpg) no-repeat top center;
+background-size: cover;
+}
+
+.item-2 {
+background: url(/assets/img/Yura-max500px.jpg) no-repeat top center;
+background-size: cover;
+}
+
+.item-3 {
+background: url(/assets/img/Oksana-max500px.jpg) no-repeat top center;
+background-size: cover;
+}
+
+.item-4 {
+background: url(/assets/img/sify-max500px.jpg) no-repeat top center;
+background-size: cover;
+}
+
+.item-5 {
+background: url(/assets/img/sanya-max500px.jpg) no-repeat top center;
+background-size: cover;
+}
+
+}

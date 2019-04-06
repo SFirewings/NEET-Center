@@ -1,30 +1,29 @@
 <?php
-    $page_title = 'Index';
-    include_once'config/Session.php';
-    include_once'config/Database.php';
-    include_once'config/Utilities.php';
-    include_once'controllers/ParseRegister.php';
-    include_once'controllers/ParseLogin.php';
+    $page_title = '';
+    include_once'core/config/Session.php';
+  	include_once'core/config/Database.php';
+  	include_once'core/config/Utilities.php';
+    include_once'core/controllers/ParseRegister.php';
+    include_once'core/controllers/ParseLogin.php';
     ?>
 <!DOCTYPE html>
 <style> body { display: none; }
-</style>
+      </style>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>NEET Crimea</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/mdb.min.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
-        <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/style-slader.css">
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery.mb.YTPlayer.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <link rel="stylesheet" href="assets/sweetalert/dist/sweetalert.css">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>NEET Crimea</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/mdb.min.css" rel="stylesheet">
+      <link href="assets/css/style.min.css" rel="stylesheet">
+      <link href="assets/css/style-slader.css" rel="stylesheet">
+      <link href="assets/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="assets/js/jquery.mb.YTPlayer.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
               	$("body").css("display", "none");
@@ -157,7 +156,7 @@
                                     </p>
                                     <a id="sa" class="btn btn-outline-white btn-lg">
                                         Кто мы?
-                                        <i class="fas fa-info ml-2"></i>                                      
+                                        <i class="fas fa-info ml-2"></i>
                                     </a>
                                 </div>
                             </div>

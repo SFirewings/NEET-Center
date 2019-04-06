@@ -34,9 +34,9 @@
         <p> Powered by SfireEngine </p>
     </div>
 </footer>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/mdb.min.js"></script>
 <script type="text/javascript">
     new WOW().init();
 </script>
