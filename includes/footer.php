@@ -1,3 +1,5 @@
+
+
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <div class="pt-4">
         <?php
@@ -52,13 +54,8 @@
                 </button>
             </div>
             <form class="form-horizontal" action="" method="POST">
-                <div class="main-error alert alert-error hide"></div>
-                <?php if(isset($result)){
-                    echo $result;
-                    } ?>
-                <?php if(isset($welcome)){
-                    echo $welcome;
-                    } ?>
+              <?php if ( isset( $welcome ) ) echo $$welcome; ?>  
+
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                         <i class="fas fa-user prefix grey-text"></i>
@@ -72,6 +69,7 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
+                    <input type="hidden" name="token" value="<?php if ( function_exists( '_token' ) ) echo _token(); ?>">
                     <button name="loginBtn" type="submit" value="login" class="btn btn-default">Отправить</button>
                 </div>
             </form>
@@ -89,27 +87,32 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <?php if ( isset( $result ) ) echo $result; ?>
+            <?php if( !empty( $form_errors ) ) echo show_errors( $form_errors ); ?>
             <div class="modal-body mx-3">
+              <form method="post" action="">
                 <div class="md-form mb-5">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="orangeForm-name" class="form-control validate">
+                    <input type="text" name="username" id="orangeForm-name" class="form-control validate">
                     <label data-error="ошибка" data-success="верно" for="orangeForm-name">Логин</label>
                 </div>
                 <div class="md-form mb-5">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="email" id="orangeForm-email" class="form-control validate">
+                    <input type="email" name="email" id="orangeForm-email" class="form-control validate">
                     <label data-error="ошибка" data-success="верно" for="orangeForm-email">Email</label>
                 </div>
                 <div class="md-form mb-4">
                     <i class="fas fa-lock prefix grey-text"></i>
-                    <input type="password" id="orangeForm-pass" class="form-control validate">
+                    <input type="password" name="password" id="orangeForm-pass" class="form-control validate">
                     <label data-error="ошибка" data-success="верно" for="orangeForm-pass">Пароль</label>
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-deep-orange">Регистрация</button>
+                <input type="hidden" name="token1" value="<?php if ( function_exists( '_token1' ) ) echo _token1(); ?>">
+                <button type="submit" class="btn btn-deep-orange" name="signupBtn">Регистрация</button>
             </div>
         </div>
+      </form>
     </div>
 </div>
 </body>
